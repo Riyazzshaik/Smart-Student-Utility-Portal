@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Student Utility Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🚀 Smart Student Utility Portal</h1>
+    <p>All-in-one student dashboard</p>
+</header>
+
+<nav>
+    <a href="#form">Register</a>
+    <a href="#tools">Tools</a>
+    <a href="#extra">Extras</a>
+    <a href="#gallery">Gallery</a>
+    <button onclick="toggleMode()">🌙</button>
+</nav>
+
+<section>
+    <h2>👋 Welcome</h2>
+    <p>Your complete student toolkit in one place.</p>
+</section>
+
+<!-- FORM -->
+<section id="form">
+    <h2>📋 Registration</h2>
+
+    <form onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Name"><br><br>
+        <input type="text" id="mobile" placeholder="Mobile"><br><br>
+        <input type="text" id="email" placeholder="Email"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="formOutput"></p>
+</section>
+
+<!-- TOOLS -->
+<section id="tools">
+    <h2>🧮 Number Tools</h2>
+
+    <input type="number" id="num" placeholder="Enter Number"><br><br>
+
+    <button onclick="factorial()">Factorial</button>
+    <button onclick="fibonacci()">Fibonacci</button>
+    <button onclick="prime()">Prime</button>
+    <button onclick="palindrome()">Palindrome</button>
+    <button onclick="armstrong()">Armstrong</button>
+
+    <p id="output"></p>
+</section>
+
+<!-- EXTRA -->
+<section id="extra">
+    <h2>⚡ Extra Tools</h2>
+
+    <!-- Calculator -->
+    <h3>🧮 Calculator</h3>
+    <input type="number" id="n1" placeholder="Number 1">
+    <input type="number" id="n2" placeholder="Number 2"><br><br>
+
+    <button onclick="calc('+')">+</button>
+    <button onclick="calc('-')">-</button>
+    <button onclick="calc('*')">*</button>
+    <button onclick="calc('/')">/</button>
+
+    <p id="calcOutput"></p>
+
+    <!-- CGPA -->
+    <h3>📊 CGPA</h3>
+    <input type="number" id="s1" placeholder="Sub1">
+    <input type="number" id="s2" placeholder="Sub2">
+    <input type="number" id="s3" placeholder="Sub3"><br><br>
+
+    <button onclick="cgpa()">Calculate</button>
+    <p id="cgpaOutput"></p>
+
+    <!-- Notes -->
+    <h3>📝 Notes</h3>
+    <input type="text" id="noteInput">
+    <button onclick="addNote()">Add</button>
+    <ul id="notesList"></ul>
+
+    <!-- Clock -->
+    <h3>⏱️ Clock</h3>
+    <p id="clock"></p>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+    <h2>📸 Gallery</h2>
+
+    <img src="images/img1.jpg" width="120">
+    <img src="images/img2.jpg" width="120">
+</section>
+
+<!-- MEDIA -->
+<section>
+    <h2>🎬 Media</h2>
+
+    <audio controls>
+        <source src="media/audio.mp3">
+    </audio><br><br>
+
+    <video width="300" controls>
+        <source src="media/video.mp4">
+    </video>
+</section>
+
+<footer>
+    <p>© 2026 Student Portal</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
