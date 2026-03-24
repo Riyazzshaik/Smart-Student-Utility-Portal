@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    text-align: center;
+}
+
+/* DARK MODE */
+.dark {
+    background: #121212;
+    color: white;
+}
+
+/* HEADER */
+header {
+    color: white;
+    padding: 20px;
+}
+
+/* NAV */
+nav {
+    background: rgba(0,0,0,0.3);
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+nav button {
+    margin-left: 20px;
+}
+
+/* SECTIONS */
+section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 85%;
+    border-radius: 10px;
+}
+
+/* INPUT */
+input {
+    padding: 8px;
+    margin: 5px;
+}
+
+/* BUTTON */
+button {
+    padding: 8px 12px;
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #00cec9;
+}
+
+/* IMAGE */
+img {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    color: white;
+    padding: 10px;
+}
+
+/* SCROLL */
+html {
+    scroll-behavior: smooth;
+}
